@@ -23,3 +23,5 @@ Template matching is popular for image processing which are two dimensional but 
 
 Here is the estimated heart rate in BPM along with ground truth for signal1 in Template Matching method:
 ![template matching](https://user-images.githubusercontent.com/37298971/38024773-bdf4d496-32a7-11e8-83f3-824771effe9c.png)
+
+Template Matching is much more accurate than Window Method. Using template matching method accuracy is almost 100%.
