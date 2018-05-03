@@ -11,7 +11,7 @@ The formula to calculate heart rate is in BPM:
 First 8s of ECG signal:
 ![signal](https://user-images.githubusercontent.com/37298971/38024449-dc621cd2-32a6-11e8-9023-d71b1f17fd6e.jpg)
 
-In identification of peaks, threshold plays an important role. Comparing with the threshold value peaks can be selected. If the ECG signal surpassed threshold value we will count that as a peak. As there are small length peaks along with large peaks in the upper portion and only large peaks in the lower portion of ECG signal so, it will be preferable to select the peaks in the lower portion of the figures. After inverting all the signals, we can use matlab built-in function findpeaks() using threshold value: mean of signal + .245 ; 
+In identification of peaks, threshold plays an important role. Comparing with the threshold value peaks can be selected. If the ECG signal surpassed threshold value we will count that as a peak. As there are small length peaks along with large peaks in the upper portion and only large peaks in the lower portion of ECG signal so, it will be preferable to select the peaks in the lower portion of the figures. After inverting all the signals, we can use matlab built-in function findpeaks() using threshold value: mean of signal + 0.245 ; 
 
 Here is the estimated heart rate in BPM along with ground truth for signal1 in Window Method:
 ![window method](https://user-images.githubusercontent.com/37298971/38024509-0d8cdd10-32a7-11e8-911a-3255df6ff631.png)
