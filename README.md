@@ -1,8 +1,8 @@
 # Heart-Rate-Tracking
-## Heart rate tracking using the window method and template matching.
-Two different ways are used to calculate heart rate in BPM (bit per minute). The first one is the window method and the second one is the template matching method. There is two datasets of ECG signal in the Dataset folder signal1 and signal2 of a person who is running in a treadmill. The signal is sampled at 125Hz for approximately 5 minutes. 
+### Heart rate tracking using the window method and template matching.
+Two different ways are used to calculate the heart rate in BPM (bit per minute). The first one is the window method and the second one is the template matching method. There are two datasets of ECG signal in the Dataset folder signal1 and signal2 of a person who is running in a treadmill. The signal is sampled at 125Hz for approximately 5 minutes. 
 
-## Window Method
+### Window Method
 In the window method, each window is chosen for 8 seconds and thus contains 1000 samples and step size for each window is 2 seconds. So, the first window is for samples of 0 to 8s, the second window is from 2s to 10s and so on.
 
 The formula to calculate heart rate is in BPM:
@@ -16,7 +16,7 @@ In the identification of peaks, threshold plays an important role. Comparing wit
 Here is the estimated heart rate in BPM along with ground truth for signal1 in Window Method:
 ![window method](https://user-images.githubusercontent.com/37298971/38024509-0d8cdd10-32a7-11e8-911a-3255df6ff631.png)
 
-## Template Matching
+### Template Matching
 Template matching is popular for image processing which is two dimensional but we can use template matching for one dimensional ECG signal. In the calculation of heart rate, we want to find out the R peak in the QRS complex. Using cross-correlation between a template which is close to QRS complex and ECG signal we can find out the R peaks in better accuracy. For template matching following template is chosen:
 
 ![template](https://user-images.githubusercontent.com/37298971/38024602-621f45ca-32a7-11e8-97af-4572cf3d10f3.png)
